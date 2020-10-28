@@ -1,0 +1,4 @@
+#ignoramos los datos de el auth
+secret.md
+#ignoramos los modulos de node
+node_modules/

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "instrumentales",
+  "info": {
+    "name": "instrumentales",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "instrumentales"
+    }
+  }
+}
