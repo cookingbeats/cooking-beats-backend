@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "albunes",
+  "info": {
+    "name": "albunes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "precio": {
+      "type": "decimal"
+    },
+    "instrumentales": {
+      "collection": "instrumentales"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "albune"
+    }
+  }
+}

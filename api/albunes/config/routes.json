@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/albunes",
+      "handler": "albunes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/albunes/count",
+      "handler": "albunes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/albunes/:id",
+      "handler": "albunes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/albunes/user/:id",
+      "handler": "albunes.user",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/albunes",
+      "handler": "albunes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/albunes/:id",
+      "handler": "albunes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/albunes/:id",
+      "handler": "albunes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

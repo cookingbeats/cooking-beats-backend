@@ -59,9 +59,47 @@
       "plugin": "users-permissions",
       "configurable": false
     },
+    "mercadopago": {
+      "type": "json"
+    },
+    "foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "baner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "carrito": {
+      "unique": true,
+      "model": "carrito",
+      "via": "user"
+    },
+    "compra": {
+      "model": "compras",
+      "via": "users_permissions_user"
+    },
     "instrumentales": {
       "via": "users_permissions_user",
       "collection": "instrumentales"
+    },
+    "albune": {
+      "via": "users_permissions_user",
+      "model": "albunes"
     }
   }
 }

@@ -17,6 +17,31 @@
     "descripcion": {
       "type": "text"
     },
+    "precio": {
+      "type": "decimal"
+    },
+    "mp3": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "wav": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
     "users_permissions_user": {
       "plugin": "users-permissions",
       "model": "user",

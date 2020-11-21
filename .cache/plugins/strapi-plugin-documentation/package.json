@@ -1,0 +1,106 @@
+{
+  "_from": "strapi-plugin-documentation@3.2.5",
+  "_id": "strapi-plugin-documentation@3.2.5",
+  "_inBundle": false,
+  "_integrity": "sha512-tw47m/OX+HXSB6FB5bKdAvgVZol1EYeuNeguW+3e1T9S4sVIRqF57TRR6/cfBLeotdePCu6NUcpACjQx8+7+FQ==",
+  "_location": "/strapi-plugin-documentation",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "strapi-plugin-documentation@3.2.5",
+    "name": "strapi-plugin-documentation",
+    "escapedName": "strapi-plugin-documentation",
+    "rawSpec": "3.2.5",
+    "saveSpec": null,
+    "fetchSpec": "3.2.5"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-documentation/-/strapi-plugin-documentation-3.2.5.tgz",
+  "_shasum": "a2de53648aad3d12bf0b02e6e626ec4d8f66c11f",
+  "_spec": "strapi-plugin-documentation@3.2.5",
+  "_where": "/home/franco/strapi",
+  "author": {
+    "name": "soupette",
+    "email": "hi@strapi.io",
+    "url": "http://strapi.io"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "soupette"
+    },
+    {
+      "name": "Aurelsicoko",
+      "email": "aurelien@strapi.io"
+    },
+    {
+      "name": "lauriejim",
+      "email": "jim@strapi.io"
+    }
+  ],
+  "dependencies": {
+    "@buffetjs/core": "3.3.1",
+    "@buffetjs/custom": "3.3.1",
+    "@buffetjs/hooks": "3.3.1",
+    "@buffetjs/icons": "3.3.1",
+    "@buffetjs/styles": "3.3.1",
+    "@buffetjs/utils": "3.3.1",
+    "cheerio": "^1.0.0-rc.3",
+    "fs-extra": "^9.0.1",
+    "immutable": "^3.8.2",
+    "koa-static": "^5.0.0",
+    "lodash": "4.17.19",
+    "moment": "^2.24.0",
+    "path-to-regexp": "^3.1.0",
+    "react": "^16.13.1",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-dom": "^16.9.0",
+    "react-intl": "4.5.0",
+    "react-redux": "^7.0.3",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "reactstrap": "8.4.1",
+    "redux": "^4.0.1",
+    "redux-immutable": "^4.0.0",
+    "reselect": "^4.0.0",
+    "strapi-helper-plugin": "3.2.5",
+    "swagger-ui-dist": "3.35.0"
+  },
+  "deprecated": false,
+  "description": "This is the description of the plugin.",
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "gitHead": "c78591553f5509fcadc8c719f6af6f1bf0e734f3",
+  "license": "SEE LICENSE IN LICENSE",
+  "maintainers": [
+    {
+      "name": "Strapi",
+      "email": "hi@strapi.io",
+      "url": "http://strapi.io"
+    },
+    {
+      "name": "soupette",
+      "email": "cyril@strapi.io"
+    },
+    {
+      "name": "lauriejim",
+      "email": "jim@strapi.io"
+    }
+  ],
+  "name": "strapi-plugin-documentation",
+  "scripts": {
+    "test": "echo \"no tests yet\""
+  },
+  "strapi": {
+    "name": "Documentation",
+    "icon": "book",
+    "description": "Create an OpenAPI Document and visualize your API with SWAGGER UI."
+  },
+  "version": "3.2.5"
+}
