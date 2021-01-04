@@ -1,68 +1,59 @@
 {
-  "routes": [
-    {
-      "method": "GET",
-      "path": "/instrumentales",
-      "handler": "instrumentales.find",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/instrumentales/count",
-      "handler": "instrumentales.count",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/instrumentales/:id",
-      "handler": "instrumentales.findOne",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/instrumentales/comprar/:id",
-      "handler": "instrumentales.comprar",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path":"/instrumentales/user/:id",
-      "handler":"instrumentales.user",
-      "config":{
-        "policies": []
-      }
-    },
-    {
-      "method": "POST",
-      "path": "/instrumentales",
-      "handler": "instrumentales.create",
-      "config": {
-        "policies": ["global::auth-control", "global::mercadopago-preference"]
-      }
-    },
-    {
-      "method": "PUT",
-      "path": "/instrumentales/:id",
-      "handler": "instrumentales.update",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "DELETE",
-      "path": "/instrumentales/:id",
-      "handler": "instrumentales.delete",
-      "config": {
-        "policies": []
-      }
-    }
-  ]
+    "routes": [{
+            "method": "GET",
+            "path": "/instrumentales",
+            "handler": "instrumentales.find",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/instrumentales/count",
+            "handler": "instrumentales.count",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/instrumentales/:id",
+            "handler": "instrumentales.findOne",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/instrumentales/user/:id",
+            "handler": "instrumentales.user",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "POST",
+            "path": "/instrumentales",
+            "handler": "instrumentales.create",
+            "config": {
+                "policies": ["global::auth-control", "global::mercadopago-preference"]
+            }
+        },
+        {
+            "method": "PUT",
+            "path": "/instrumentales/:id",
+            "handler": "instrumentales.update",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "DELETE",
+            "path": "/instrumentales/:id",
+            "handler": "instrumentales.delete",
+            "config": {
+                "policies": []
+            }
+        }
+    ]
 }

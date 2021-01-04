@@ -625,6 +625,9 @@
               "users_permissions_user": {
                 "type": "string"
               },
+              "preference": {
+                "type": "object"
+              },
               "published_at": {
                 "type": "string"
               },

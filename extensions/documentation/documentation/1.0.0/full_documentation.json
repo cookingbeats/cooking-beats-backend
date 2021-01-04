@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/23/2020 6:25:03 PM"
+    "x-generation-date": "01/03/2021 4:42:18 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2218,74 +2218,6 @@
                 "schema": {
                   "type": "integer",
                   "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Instrumentales"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/instrumentales/comprar/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "Retrieve instrumentales document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
                 }
               }
             }
@@ -4551,6 +4483,9 @@
               "users_permissions_user": {
                 "type": "string"
               },
+              "preference": {
+                "type": "object"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -4733,6 +4668,9 @@
               },
               "users_permissions_user": {
                 "type": "string"
+              },
+              "preference": {
+                "type": "object"
               },
               "published_at": {
                 "type": "string"
@@ -4979,6 +4917,9 @@
               },
               "users_permissions_user": {
                 "type": "string"
+              },
+              "preference": {
+                "type": "object"
               },
               "published_at": {
                 "type": "string"
@@ -5246,6 +5187,9 @@
               }
             }
           },
+          "preference": {
+            "type": "object"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5265,6 +5209,9 @@
           },
           "users_permissions_user": {
             "type": "string"
+          },
+          "preference": {
+            "type": "object"
           },
           "published_at": {
             "type": "string",
@@ -5737,6 +5684,9 @@
                 },
                 "users_permissions_user": {
                   "type": "string"
+                },
+                "preference": {
+                  "type": "object"
                 },
                 "published_at": {
                   "type": "string"
