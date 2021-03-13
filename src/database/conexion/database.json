@@ -1,0 +1,8 @@
+{
+    "database" : {
+        "HOSTNAME" : "localhost",
+        "USERNAME" : "root",
+        "PASSWORD" : "",
+        "DATABASE" : "cookingbeats"
+    }
+}
